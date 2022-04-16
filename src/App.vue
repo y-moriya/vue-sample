@@ -1,11 +1,7 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <h1 class="m-10 text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/hello">Hello World</router-link>
+  </div>
+  <router-view />
 </template>
